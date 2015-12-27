@@ -13,7 +13,7 @@ import (
 
 func main() {
 	router := gin.Default()
-	router.Use(gzip.Gzip(gzip.DefaultCompression))
+	router.Use(gzip.Gzip(gzip.BestSpeed))
 	router.GET("/bench", func(cc *gin.Context) {
 			cc.IndentedJSON(200, gin.H{
 			  "abcdefghijklmnopqrstuvwxyz0":  12345678910111213141516171819202122232425262728293031323334353637383940,

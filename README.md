@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # Fast gzip middleware for Gin-Gonic
 
 This gzip middleware uses the `github.com/klauspost/compress/gzip` compression package instead of the standard `compress/gzip`.
